@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
@@ -21,12 +21,12 @@
           </select>
 
       <label for="pan">Tipo de Pan:</label>
-          <div class="radio-list">
-              <label for="clasico"><input type="radio">Clásico</label>
-              <label for="ajonjoli"><input type="radio">Con Ajonjolí (+20 MXN)</label>
-              <label for="integral"><input type="radio">Integral (+20 MXN)</label>
-              <label for="brioche"><input type="radio">Brioche (+50 MXN)</label>
-          </div>
+      <div class="radio-list">
+        <label for="clasico"><input type="radio" id="clasico" name="pan" value="0"> Clásico</label>
+        <label for="ajonjoli"><input type="radio" id="ajonjoli" name="pan" value="20"> Con Ajonjolí (+20 MXN)</label>
+        <label for="integral"><input type="radio" id="integral" name="pan" value="20"> Integral (+20 MXN)</label>
+        <label for="brioche"><input type="radio" id="brioche" name="pan" value="50"> Brioche (+50 MXN)</label>
+      </div>
 
       <label>Ingredientes adicionales (5.00 MXN c/u):</label>
       <div class="checkbox-list">
@@ -62,7 +62,7 @@
 
       <div class="total" id="total">Total: $0.00</div>
 
-      <button type="button">Calcular Total</button>
+  <button type="button" onclick="calcularTotal()">Calcular Total</button>
     </form>
     <div class="imagenes">
       <img src="img/75869405.jpg" alt="Baguette 1">
