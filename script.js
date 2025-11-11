@@ -16,7 +16,7 @@ function calcularTotal() {
 		precioPan = parseFloat(panSeleccionado.value);
 	}
 
-	// 
+	
 	var checkboxes = document.querySelectorAll('input[type="checkbox"][value]');
 	var numIngredientes = 0;
 	for (var i = 0; i < checkboxes.length; i++) {
